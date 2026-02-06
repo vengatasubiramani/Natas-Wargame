@@ -1,21 +1,16 @@
-## OverTheWire Natas Wargame – Progress & Learning Journey
+# OverTheWire Natas Wargame – Progress & Learning Journey
 
-I have successfully completed the OverTheWire **Natas Wargame up to Level 30** through structured research, deep technical analysis, and hands-on experimentation.
+I have successfully completed the OverTheWire Natas Wargame up to Level 30 through structured research, deep technical analysis, and hands-on experimentation.
 
 Each challenge was solved by understanding the underlying vulnerability rather than simply viewing solutions. I studied technical documentation, research articles, blogs, and open-source references to analyze how each web application functioned internally before developing a working exploit.
 
-### 💡 Skills Strengthened
+## 💡 Skills Strengthened
 
--   Web application vulnerability analysis
-    
--   SQL injection & parameter manipulation
-    
--   Cryptographic attack concepts (CBC block manipulation, encoding flaws)
-    
--   Server-side logic exploitation
-    
--   Practical debugging and security testing
-    
+- Web application vulnerability analysis  
+- SQL injection & parameter manipulation  
+- Cryptographic attack concepts (CBC block manipulation, encoding flaws)  
+- Server-side logic exploitation  
+- Practical debugging and security testing  
 
 This journey significantly strengthened my problem-solving ability, research skills, and practical understanding of real-world cybersecurity concepts.
 
