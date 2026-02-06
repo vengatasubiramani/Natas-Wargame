@@ -1,6 +1,29 @@
+## OverTheWire Natas Wargame – Progress & Learning Journey
+
+I have successfully completed the OverTheWire **Natas Wargame up to Level 30** through structured research, deep technical analysis, and hands-on experimentation.
+
+Each challenge was solved by understanding the underlying vulnerability rather than simply viewing solutions. I studied technical documentation, research articles, blogs, and open-source references to analyze how each web application functioned internally before developing a working exploit.
+
+### 💡 Skills Strengthened
+
+-   Web application vulnerability analysis
+    
+-   SQL injection & parameter manipulation
+    
+-   Cryptographic attack concepts (CBC block manipulation, encoding flaws)
+    
+-   Server-side logic exploitation
+    
+-   Practical debugging and security testing
+    
+
+This journey significantly strengthened my problem-solving ability, research skills, and practical understanding of real-world cybersecurity concepts.
+
 # 🏁 Natas Level 00: The Basics of Web Pages
 
-**URL:** `http://natas0.natas.labs.overthewire.org` **Credentials:** `natas0` : `natas0`
+**URL:** `http://natas0.natas.labs.overthewire.org` 
+
+**Credentials:** `natas0` : `natas0`
 
 ### 💡 The Concept
 
@@ -23,7 +46,9 @@ When you request a page, the server sends the full HTML file. If a developer for
 
 # 🏁 Natas Level 01: Bypassing Client-Side Restrictions
 
-**URL:** `http://natas1.natas.labs.overthewire.org` **Credentials:** `natas1` : `0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq`
+**URL:** `http://natas1.natas.labs.overthewire.org` 
+
+**Credentials:** `natas1` : `0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq`
 
 ### 💡 The Concept
 
@@ -48,7 +73,9 @@ In this level, the developers used JavaScript to intercept the `contextmenu` eve
 
 # 🏁 Natas Level 02: Information Leakage & Directory Indexing
 
-**URL:** `http://natas2.natas.labs.overthewire.org` **Credentials:** `natas2` : `TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI`
+**URL:** `http://natas2.natas.labs.overthewire.org` 
+
+**Credentials:** `natas2` : `TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI`
 
 ### 💡 The Concept
 
@@ -71,7 +98,9 @@ By examining the source code, you find a reference to a file path: `files/pixel.
 
 # 🏁 Natas Level 03: Hidden in Plain Sight (Robots.txt)
 
-**URL:** `http://natas3.natas.labs.overthewire.org` **Credentials:** `natas3` : `3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH`
+**URL:** `http://natas3.natas.labs.overthewire.org` 
+
+**Credentials:** `natas3` : `3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH`
 
 ### 💡 The Concept
 
@@ -94,7 +123,9 @@ Developers often think that "Disallowing" a folder in `robots.txt` makes it secr
 
 # 🏁 Natas Level 04: Spoofing the Referer Header
 
-**URL:** `http://natas4.natas.labs.overthewire.org` **Credentials:** `natas4` : `QryZXc2e0zahULdHrtHxzyYkj59kUxLQ`
+**URL:** `http://natas4.natas.labs.overthewire.org` 
+
+**Credentials:** `natas4` : `QryZXc2e0zahULdHrtHxzyYkj59kUxLQ`
 
 ### 💡 The Concept
 
@@ -117,7 +148,9 @@ The server checks if your `Referer` header matches `http://natas5.natas.labs.ove
 
 # 🏁 Natas Level 05: Manipulating Session Cookies
 
-**URL:** `http://natas5.natas.labs.overthewire.org` **Credentials:** `natas5` : `0n35PkggAPm2zbEpOU802c0x0Msn1ToK`
+**URL:** `http://natas5.natas.labs.overthewire.org` 
+
+**Credentials:** `natas5` : `0n35PkggAPm2zbEpOU802c0x0Msn1ToK`
 
 ### 💡 The Concept
 
@@ -140,7 +173,9 @@ The server sends a cookie `loggedin=0`. On subsequent visits, it checks this val
 
 # 🏁 Natas Level 06: Reading Server-Side Secret Files
 
-**URL:** `http://natas6.natas.labs.overthewire.org` **Credentials:** `natas6` : `0RoJwHdSKWFTYR5WuiAewauSuNaBXned`
+**URL:** `http://natas6.natas.labs.overthewire.org` 
+
+**Credentials:** `natas6` : `0RoJwHdSKWFTYR5WuiAewauSuNaBXned`
 
 ### 🔍 Source Code
 
@@ -173,7 +208,9 @@ if(array_key_exists("submit", $_POST)) {
 
 # 🏁 Natas Level 07: Local File Inclusion (LFI)
 
-**URL:** `http://natas7.natas.labs.overthewire.org` **Credentials:** `natas7` : `bmg8SvU1LizuWjx3y7xkNERkHxGre0GS`
+**URL:** `http://natas7.natas.labs.overthewire.org`
+
+**Credentials:** `natas7` : `bmg8SvU1LizuWjx3y7xkNERkHxGre0GS`
 
 ### 💡 The Concept
 
@@ -192,7 +229,9 @@ The URL `index.php?page=home` suggests that the `page` parameter is used to dete
 
 # 🏁 Natas Level 08: Reversing Weak Encoding
 
-**URL:** `http://natas8.natas.labs.overthewire.org` **Credentials:** `natas8` : `xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q`
+**URL:** `http://natas8.natas.labs.overthewire.org`
+
+**Credentials:** `natas8` : `xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q`
 
 ### 🔍 Source Code
 
@@ -221,7 +260,9 @@ function encodeSecret($secret) {
 
 # 🏁 Natas Level 09: Command Injection
 
-**URL:** `http://natas9.natas.labs.overthewire.org` **Credentials:** `natas9` : `ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t`
+**URL:** `http://natas9.natas.labs.overthewire.org` 
+
+**Credentials:** `natas9` : `ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t`
 
 ### 🔍 Source Code
 
@@ -249,7 +290,9 @@ if($key != "") {
 
 # 🏁 Natas Level 10: Advanced Command Injection (Filter Bypass)
 
-**URL:** `http://natas10.natas.labs.overthewire.org` **Credentials:** `natas10` : `t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu`
+**URL:** `http://natas10.natas.labs.overthewire.org` 
+
+**Credentials:** `natas10` : `t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu`
 
 ### 🔍 Source Code
 
