@@ -616,4 +616,42 @@ if($key != "") {
 3.  Forge a ciphertext by swapping or repeating blocks to bypass the escaping of the single quote.
     
 
-**Password for Natas 29:** `[Use the script output to retrieve]`
+**Password for Natas 29:** `31F4j3Qi2PnuhIZQokxXk1L3QT9Cppns`
+
+## 🏁 Natas Level 29: Perl Command Injection
+
+**URL:** http://natas29.natas.labs.overthewire.org 
+
+**Credentials:** `natas29` : `31F4j3Qi2PnuhIZQokxXk1L3QT9Cppns`
+
+**💡 The Concept** The application uses a Perl script to open files. In Perl, the `open()` function can execute commands if the filename starts or ends with a pipe (`|`). By injecting a pipe, we can execute arbitrary shell commands.
+
+**🚀 How to solve**
+
+1.  Inject a pipe and a command into the `file` parameter: `?file=|ls`.
+    
+2.  To bypass the "natas" keyword filter when reading the password, use shell quoting: `?file=|cat+/etc/na""tas_webpass/nat""as30`.
+    
+3.  Use a null byte `%00` if needed to terminate the `.txt` extension append.
+    
+
+**Password for Natas 30:** `WQhx1BvcmP9irs2MP9tRnLsNaDI76YrH`
+
+## 🏁 Natas Level 30: Perl DBI Quote Vulnerability
+
+**URL:** http://natas30.natas.labs.overthewire.org 
+
+**Credentials:** `natas30` : `WQhx1BvcmP9irs2MP9tRnLsNaDI76YrH`
+
+**💡 The Concept** Perl's `DBI->quote()` method behaves unexpectedly when passed an array instead of a string. Passing an array can bypass the quoting mechanism, allowing for SQL injection or logic manipulation.
+
+**🚀 How to solve**
+
+1.  Send a POST request where the `password` parameter is an array rather than a single string.
+    
+2.  In Python: `data = {"username": "natas31", "password": ["'' or 1", 2]}`.
+    
+3.  This forces the query to return true for the admin user.
+    
+
+**Password for Natas 31:** `m7bfjAHpJmSYgQWWeqRE2qVBuMiRNq0y`
